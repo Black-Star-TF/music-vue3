@@ -19,7 +19,7 @@ module.exports = {
 	},
 	plugins: ['vue', '@typescript-eslint'],
 	rules: {
-		indent: ['error', 'tab'],
+		indent: 'off',
 		'linebreak-style': ['error', 'windows'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'never'],
@@ -32,6 +32,13 @@ module.exports = {
 				}
 			}
 		],
-		'vue/multi-word-component-names': 'off'
+		'vue/multi-word-component-names': 'off',
+		'prettier/prettier': [
+			'error',
+			{},
+			{
+				usePrettierrc: true
+			}
+		]
 	}
 }
